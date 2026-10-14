@@ -1,0 +1,8 @@
+{
+  "name": "Unnecessary Advice",
+  "description": "A crisp white screen serving your daily dose of completely unnecessary advice with oversized tags and dry humor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

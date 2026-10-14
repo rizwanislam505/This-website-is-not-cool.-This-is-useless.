@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      // Defensive fix for browser extensions that attempt to reassign window.fetch
+      try {
+        const originalFetch = window.fetch ? window.fetch.bind(window) : undefined;
+        let _currentFetch = originalFetch;
+        Object.defineProperty(window, 'fetch', {
+          configurable: true,
+          enumerable: true,
+          get() {
+            return _currentFetch;
+          },
+          set(newFetch) {
+            _currentFetch = newFetch;
+          }
+        });
+      } catch (err) {
+        // Silently proceed if already defined
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Core SEO Meta Tags -->
+    <title>This website is not cool. This is useless.</title>
+    <meta name="description" content="Yes, you have heard right, this website is completely useless. Explore over 235+ completely pointless, unnecessary, and hilarious pieces of life advice." />
+    <meta name="keywords" content="useless website, unnecessary advice, pointless advice, not cool, useless advice generator, humor, satire, anti-motivation, funny quotes" />
+    <meta name="author" content="This Website Is Not Cool" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/" />
+
+    <!-- OpenGraph (Facebook, LinkedIn, Discord, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="This website is not cool." />
+    <meta property="og:title" content="This website is not cool. This is useless." />
+    <meta property="og:description" content="Yes, you have heard right, this website is completely useless. Click here to get completely unnecessary advice." />
+    <meta property="og:url" content="https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="This website is not cool. This is useless." />
+    <meta name="twitter:description" content="Yes, you have heard right, this website is completely useless. Click to get completely unnecessary advice." />
+
+    <!-- GEO & AI Search Engine Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/#website",
+          "url": "https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/",
+          "name": "This website is not cool.",
+          "description": "Yes, you have heard right, this website is completely useless.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/#webapp",
+          "name": "This website is not cool. This is useless.",
+          "url": "https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/",
+          "applicationCategory": "EntertainmentApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "An interactive satirical web app providing 235+ completely unnecessary, useless, and pointless pieces of advice with smooth transitions.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ais-dev-lpgyjztu64ca7ia6sypky4-901620165363.asia-southeast1.run.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is this website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This website is not cool. It is an intentionally useless website that serves pointless, hilarious, and completely unnecessary advice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the advice on this website useful?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. All advice provided on this website is completely unnecessary, pointless, and deliberately unhelpful."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this website work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Users click 'Click here to get some useful advice' to enter the advice page, where 235+ unique, non-repeating pieces of useless advice are displayed with smooth transitions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does this website exist?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It exists purely as comedy and satire, leaning into complete uselessness."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-black antialiased selection:bg-black selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
